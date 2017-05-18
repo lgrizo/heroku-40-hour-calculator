@@ -75,7 +75,7 @@ h4 {
   font-family: 'Hind', sans-serif;
   line-height: 14.5px;
   vertical-align: middle;
-  box-shadow: none !important;
+  -webkit-appearance: none;
 }
 
 .sections {
