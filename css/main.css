@@ -63,18 +63,22 @@ h4 {
 
 ::-webkit-input-placeholder {
    text-align:center;
+   vertical-align: middle;
 }
 
 :-moz-placeholder { /* Firefox 18- */
    text-align:center;
+   vertical-align: middle;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
    text-align:center;
+   vertical-align: middle;
 }
 
 :-ms-input-placeholder {
    text-align:center;
+   vertical-align: middle;
 }
 
 .userInput {
