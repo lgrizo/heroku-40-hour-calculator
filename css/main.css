@@ -129,7 +129,7 @@ h4 {
   border-radius: 12px;
   text-align: center;
   display: inline-block;
-  line-height: 29px;
+  line-height: 30px;
   margin-top: 20px;
   margin-bottom: 100px;
   font-family: 'Hind', sans-serif;
@@ -157,7 +157,6 @@ button:focus {
     margin: 0 auto;
     width: 520px;
   }
-
   .totalHours {
     display: inline-block;
     padding-right: 75px;
@@ -196,9 +195,14 @@ button:focus {
   }
   .buttons {
     text-align: center;
-    /*padding-left: 380px;*/
+    padding-left: 380px;
     margin-top: 0px;
   }
+
+  .amButton, .pmButton {
+    text-align: center;
+  }
+
   .lunch {
     display: inline-block;
     padding-right: 75px;
@@ -223,12 +227,22 @@ button:focus {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-
   .sections, .clockOutTime, .defaultCalc {
     vertical-align: middle;
   }
-
   .calcButton {
     width: 520px;
+  }
+
+  .userInput {
+    vertical-align: middle;
+  }
+
+  .userInput::placeholder {
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(149, 152, 154, 0.4);
+    text-align: center;
+    vertical-align: middle;
   }
 }
