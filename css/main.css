@@ -58,7 +58,7 @@ h4 {
   font-weight: 300;
   font-style: italic;
   color: rgba(149, 152, 154, 0.4);
-  text-align: center;
+  text-align: right;
   vertical-align: middle;
 }
 
@@ -234,15 +234,4 @@ button:focus {
     width: 520px;
   }
 
-  .userInput {
-    vertical-align: middle;
-  }
-
-  .userInput::placeholder {
-    font-weight: 300;
-    font-style: italic;
-    color: rgba(149, 152, 154, 0.4);
-    text-align: center;
-    vertical-align: middle;
-  }
 }
