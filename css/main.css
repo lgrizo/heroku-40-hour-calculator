@@ -59,26 +59,7 @@ h4 {
   font-style: italic;
   color: rgba(149, 152, 154, 0.4);
   text-align: center;
-}
-
-::-webkit-input-placeholder {
-   text-align:center;
-   vertical-align: middle;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   text-align:center;
-   vertical-align: middle;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   text-align:center;
-   vertical-align: middle;
-}
-
-:-ms-input-placeholder {
-   text-align:center;
-   vertical-align: middle;
+  line-height: inherit;
 }
 
 .userInput {
