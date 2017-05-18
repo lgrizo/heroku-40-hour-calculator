@@ -62,6 +62,13 @@ h4 {
   padding-top: 7px;
 }
 
+.userInput [type=text] {
+    /* Remove First */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .userInput {
   border: 1px solid #C3C8CB;
   width: 133px;
