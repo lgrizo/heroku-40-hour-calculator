@@ -59,7 +59,7 @@ h4 {
   font-style: italic;
   color: rgba(149, 152, 154, 0.4);
   text-align: center;
-  line-height: inherit;
+  padding-top: 6px;
 }
 
 .userInput {
