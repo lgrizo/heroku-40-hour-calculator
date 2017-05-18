@@ -61,6 +61,22 @@ h4 {
   text-align: center;
 }
 
+::-webkit-input-placeholder {
+   text-align:center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align:center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align:center;
+}
+
+:-ms-input-placeholder {
+   text-align:center;
+}
+
 .userInput {
   border: 1px solid #C3C8CB;
   width: 133px;
