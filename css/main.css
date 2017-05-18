@@ -62,12 +62,7 @@ h4 {
   padding-top: 7px;
 }
 
-.userInput [type=text] {
-    /* Remove First */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
+
 
 .userInput {
   border: 1px solid #C3C8CB;
@@ -80,6 +75,7 @@ h4 {
   font-family: 'Hind', sans-serif;
   line-height: 14.5px;
   vertical-align: middle;
+  box-shadow: none !important;
 }
 
 .sections {
