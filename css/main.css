@@ -1,0 +1,226 @@
+/*Base style layouts*/
+
+header, body {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: #edf0f1;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  border-bottom-left-radius: 46px;
+  border-bottom-right-radius: 46px;
+  background-image: linear-gradient(120deg, #96deda 0%, #50c9c3 40%);
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  color: #fff;
+  text-align: center;
+}
+
+header h3 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+h4 {
+  font-weight: 100;
+  color: #95989A;
+  text-align: center;
+}
+
+.sections {
+  margin: 30px 0;
+}
+
+
+/*Gray areas that display javascript calculations*/
+
+.defaultCalc {
+  border: 1px solid #C3C8CB;
+  width: 133px;
+  height: 29px;
+  background-color: #DBDBDB;
+  border-radius: 12px;
+  display: inline-block;
+  line-height: 29px;
+}
+
+
+/*Sections that require the user to input a number*/
+
+.userInput::placeholder {
+  font-weight: 100;
+  font-style: italic;
+  color: rgba(149, 152, 154, 0.4);
+  text-align: center;
+}
+
+.userInput {
+  border: 1px solid #C3C8CB;
+  width: 133px;
+  height: 29px;
+  border-radius: 12px;
+  text-align: center;
+  color: #95989A;
+  font-weight: 100;
+}
+
+.sections {
+  margin: 30px 0;
+}
+
+
+/*Buttons*/
+
+.amButton, .pmButton {
+  border: 1px;
+  width: 45px;
+  height: 29px;
+  background-color: #fff;
+  color: #95989A;
+  border-radius: 12px;
+  line-height: 14.5px;
+  font-family: "Lato";
+}
+
+.buttons {
+  margin: 25px 0;
+}
+
+.calcButton {
+  border: 1px;
+  width: 250px;
+  height: 36px;
+  background-color: #50c9c3;
+  color: #FFF;
+  border-radius: 12px;
+  font-weight: 100;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.clockOutTime {
+  border: 1px none;
+  width: 133px;
+  height: 29px;
+  background-color: #60B6FF;
+  color: #fff;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.clockOutAMButton, .clockOutPMButton {
+  width: 45px;
+  height: 29px;
+  background-color: #fff;
+  color: #95989A;
+  border-radius: 12px;
+  text-align: center;
+  display: inline-block;
+  line-height: 29px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-family: "Lato";
+}
+
+input:focus {
+  outline: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.calcButton:active {
+  font-size: 1.075em;
+}
+
+@media (min-width: 768px) {
+  header {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .wrapper {
+    margin: 0 auto;
+    width: 520px;
+  }
+  .totalHours {
+    display: inline-block;
+    padding-right: 75px;
+    text-align: left;
+    width: 300px;
+  }
+  .fridayHours {
+    display: inline-block;
+    padding-right: 75px;
+    text-align: left;
+    width: 300px;
+  }
+  .remDecimal {
+    display: inline-block;
+    padding-right: 75px;
+    text-align: right;
+    width: 300px;
+  }
+  .convertedTime {
+    display: inline-block;
+    padding-right: 75px;
+    text-align: right;
+    width: 300px;
+  }
+  .remainHours {
+    display: inline-block;
+    padding-right: 75px;
+    text-align: right;
+    width: 300px;
+  }
+  .clockFriday {
+    display: inline-block;
+    padding-right: 75px;
+    text-align: right;
+    width: 300px;
+  }
+  .buttons {
+    text-align: center;
+    padding-left: 380px;
+    margin-top: 0px;
+  }
+  .lunch {
+    display: inline-block;
+    padding-right: 75px;
+    text-align: right;
+    width: 300px;
+  }
+  .outFriday {
+    display: inline-block;
+    padding-right: 50px;
+    text-align: left;
+  }
+  .lastButtons {
+    text-align: center;
+    padding-left: 380px;
+  }
+  .outFriday {
+    padding-right: 75px;
+    text-align: right;
+    width: 300px;
+  }
+  .clockOutAMButton, .clockOutPMButton {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .sections, .clockOutTime, .defaultCalc {
+    vertical-align: middle;
+  }
+
+  .calcButton {
+    width: 520px;
+  }
+}
