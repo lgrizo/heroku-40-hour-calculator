@@ -157,6 +157,28 @@ button:focus {
     margin: 0 auto;
     width: 520px;
   }
+
+  .userInput::placeholder {
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(149, 152, 154, 0.4);
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .userInput {
+    border: 1px solid #C3C8CB;
+    width: 133px;
+    height: 29px;
+    border-radius: 12px;
+    text-align: center;
+    color: #95989A;
+    font-weight: 300;
+    font-family: 'Hind', sans-serif;
+    line-height: 14.5px;
+    vertical-align: middle;
+  }
+  
   .totalHours {
     display: inline-block;
     padding-right: 75px;
