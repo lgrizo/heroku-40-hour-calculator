@@ -144,7 +144,6 @@ button:focus {
   outline: 0;
 }
 
--webkit-appearance: none;
 
 .calcButton:active {
   font-size: 1.075em;
