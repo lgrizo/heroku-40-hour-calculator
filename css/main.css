@@ -58,8 +58,7 @@ h4 {
   font-weight: 300;
   font-style: italic;
   color: rgba(149, 152, 154, 0.4);
-  text-align: right;
-  vertical-align: middle;
+  text-align: center;
 }
 
 .userInput {
