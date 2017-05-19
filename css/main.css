@@ -49,6 +49,11 @@ h4 {
   border-radius: 12px;
   display: inline-block;
   line-height: 29px;
+  font-weight: 300;
+  font-family: 'Hind', sans-serif;
+  line-height: 14.5px;
+  vertical-align: middle;
+  -webkit-appearance: none;
 }
 
 
