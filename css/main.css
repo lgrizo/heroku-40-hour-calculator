@@ -96,11 +96,13 @@ h4 {
   line-height: 29px;
   font-weight: 300;
   padding-right: 5px;
+  box-sizing: border-box;
 }
 
 .buttons {
   margin: 25px 0;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .calcButton {
