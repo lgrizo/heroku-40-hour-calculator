@@ -8,9 +8,15 @@
 
 // next
 
-var hoursWeek = document.getElementById('hoursWeek');
-var fridayMorning = document.getElementById('fridayMorning');
-var remainingDecimals = document.getElementById('remainingDecimals');
+// var hoursWeek = document.getElementById('hoursWeek');
 
-var convertToTime = fridayMorning + remainingDecimals;
-console.log(convertToTime);
+
+function calculateButton() {
+  var fridayMorning = parseInt(document.getElementById('fridayMorning').value);
+  var remainingDecimals = (document.getElementById('remainingDecimals').value);
+  var currentWorked = (fridayMorning + remainingDecimals);
+
+  document.getElementById('currentWorked').innerHTML = currentWorked;
+
+
+}

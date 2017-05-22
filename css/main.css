@@ -43,8 +43,8 @@ h4 {
 
 .defaultCalc {
   border: 1px solid #C3C8CB;
-  width: 135px;
-  height: 32px;
+  width: 133px;
+  height: 29px;
   background-color: #DBDBDB;
   border-radius: 12px;
   display: inline-block;
@@ -80,6 +80,7 @@ h4 {
   font-family: 'Hind', sans-serif;
   line-height: 14.5px;
   vertical-align: middle;
+  /*this removed the box shadow that was showing up on safari mobile*/
   -webkit-appearance: none;
 }
 
@@ -167,6 +168,16 @@ button:focus {
   font-size: 1.175em;
 }
 
+#currentWorked {
+  width: 133px;
+  height: 29px;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+
+
+}
+
 @media (min-width: 768px) {
   header {
     margin: 0 auto;
@@ -174,7 +185,7 @@ button:focus {
   }
   .wrapper {
     margin: 0 auto;
-    width: 520px;
+    width: 575px;
   }
   .totalHours {
     display: inline-block;
@@ -194,7 +205,7 @@ button:focus {
     text-align: right;
     width: 300px;
   }
-  .convertedTime {
+  .currentHoursWorked {
     display: inline-block;
     padding-right: 75px;
     text-align: right;
