@@ -14,7 +14,7 @@
 function calculateButton() {
   var fridayMorning = parseInt(document.getElementById('fridayMorning').value);
   var remainingDecimals = (document.getElementById('remainingDecimals').value);
-  var currentWorked = (fridayMorning + remainingDecimals);
+  let currentWorked = (fridayMorning + remainingDecimals);
 
   document.getElementById('currentWorked').innerHTML = currentWorked;
 

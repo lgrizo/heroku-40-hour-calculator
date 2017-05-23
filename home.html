@@ -28,25 +28,14 @@
 
     <div>
       <h4 class="sections fridayHours">On Friday morning, how many hours<br />(in whole numbers) do you currently have?</h4>
-      <input type="text" class="userInput" id="fridayMorning" placeholder="ex: 33" />
+      <input type="tel" class="userInput" id="fridayMorning" placeholder="ex: 33"  min="1" max="80"/>
     </div>
 
     <div>
       <h4 class="sections remDecimal">Enter remaining decimals:</h4>
-      <input type="text" class="userInput" id="remainingDecimals" placeholder="ex: .57" />
+      <input type="tel" class="userInput" id="remainingDecimals" placeholder="ex: .57" />
     </div>
 
-    <div>
-      <h4 class="sections currentHoursWorked">Current hours worked:</h4>
-      <output type="text" class="defaultCalc" id="currentWorked">
-
-      </output>
-    </div>
-
-    <div>
-      <h4 class="sections remainHours">Remaining hours to work:</h4>
-      <output type="text" class="defaultCalc" id="remainingHours">
-    </div>
 
     <div>
       <h4 class="sections clockFriday">Enter time you clocked in on Friday:</h4>
@@ -60,11 +49,23 @@
 
     <div>
       <h4 class="sections lunch">Enter today's lunch break in minutes:</h4>
-      <input type="text" class="userInput" id="enterLunch" placeholder="ex: 30" />
+      <input type="tel" class="userInput" id="enterLunch" placeholder="ex: 30"/>
     </div>
 
     <div class="sections calculate">
       <button class="calcButton" onclick="calculateButton()">Calculate my hours</button>
+    </div>
+
+    <div>
+      <h4 class="sections currentHoursWorked">Current hours worked:</h4>
+      <output type="text" class="defaultCalc" id="currentWorked">
+
+      </output>
+    </div>
+
+    <div>
+      <h4 class="sections remainHours">Remaining hours to work:</h4>
+      <output type="text" class="defaultCalc" id="remainingHours">
     </div>
 
     <div>
