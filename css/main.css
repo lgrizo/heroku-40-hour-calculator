@@ -42,11 +42,11 @@ h4 {
 /*Gray areas that display javascript calculations*/
 
 .defaultCalc {
-  border: 1px solid #C3C8CB;
+  /*border: 1px solid #C3C8CB;
   width: 133px;
   height: 29px;
   background-color: #DBDBDB;
-  border-radius: 12px;
+  border-radius: 12px;*/
   display: inline-block;
   line-height: 29px;
   font-weight: 300;
@@ -169,12 +169,11 @@ button:focus {
 }
 
 #currentWorked {
-  width: 133px;
+  width: 200px;
   height: 29px;
-  text-align: center;
+  text-align: left;
   line-height: 30px;
   vertical-align: middle;
-
 
 }
 
@@ -187,6 +186,18 @@ button:focus {
     margin: 0 auto;
     width: 575px;
   }
+
+  .resultsDiv {
+    width: 650px;
+  }
+
+  .results {
+    display: inline-block;
+    width: 300px;
+    text-align: right;
+    padding-right: 75px;
+  }
+
   .totalHours {
     display: inline-block;
     padding-right: 75px;
@@ -205,18 +216,7 @@ button:focus {
     text-align: right;
     width: 300px;
   }
-  .currentHoursWorked {
-    display: inline-block;
-    padding-right: 75px;
-    text-align: right;
-    width: 300px;
-  }
-  .remainHours {
-    display: inline-block;
-    padding-right: 75px;
-    text-align: right;
-    width: 300px;
-  }
+
   .clockFriday {
     display: inline-block;
     padding-right: 75px;
@@ -239,19 +239,10 @@ button:focus {
     text-align: right;
     width: 300px;
   }
-  .outFriday {
-    display: inline-block;
-    padding-right: 50px;
-    text-align: left;
-  }
+
   .lastButtons {
     text-align: center;
     padding-left: 380px;
-  }
-  .outFriday {
-    padding-right: 75px;
-    text-align: right;
-    width: 300px;
   }
   .clockOutAMButton, .clockOutPMButton {
     margin-top: 0px;
