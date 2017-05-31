@@ -42,11 +42,6 @@ h4 {
 /*Gray areas that display javascript calculations*/
 
 .defaultCalc {
-  /*border: 1px solid #C3C8CB;
-  width: 133px;
-  height: 29px;
-  background-color: #DBDBDB;
-  border-radius: 12px;*/
   display: inline-block;
   line-height: 29px;
   font-weight: 300;
@@ -125,15 +120,6 @@ h4 {
   line-height: 36px;
 }
 
-.clockOutTime {
-  border: 1px none;
-  width: 133px;
-  height: 29px;
-  background-color: #60B6FF;
-  color: #fff;
-  border-radius: 12px;
-  text-align: center;
-}
 
 .clockOutAMButton, .clockOutPMButton {
   border: 1px solid #C3C8CB;
@@ -163,17 +149,24 @@ button:focus {
   outline: 0;
 }
 
+.userInput:focus {
+    outline: none !important;
+    border:1px solid #50c9c3;
+}
+
 
 .calcButton:active {
   font-size: 1.175em;
 }
 
-#currentWorked {
-  width: 200px;
+#currentWorked,
+#hoursLeftToWork {
+  width: 180px;
   height: 29px;
-  text-align: left;
+  text-align: center;
   line-height: 30px;
   vertical-align: middle;
+  color: #60B6FF;
 
 }
 
@@ -193,9 +186,9 @@ button:focus {
 
   .results {
     display: inline-block;
-    width: 300px;
+    width: 250px;
     text-align: right;
-    padding-right: 75px;
+    padding-right: 50px;
   }
 
   .totalHours {
