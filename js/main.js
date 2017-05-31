@@ -42,6 +42,4 @@ function calculateButton() {
 
   document.getElementById('hoursLeftToWork').innerHTML = hoursLeftToWork;
 
-
-
 }
