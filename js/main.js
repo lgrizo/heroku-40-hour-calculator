@@ -1,45 +1,39 @@
 //
-// change border color to teal when input is clicked
-
-// const userInput = document.getElementById("userInput");
-//   userInput.addEventListener("click", () => {
-//     userInput.style.borderColor = "#15D1BC";
-// });
-
-// next
-
-// var hoursWeek = document.getElementById('hoursWeek');
-
 
 function calculateButton() {
+
+  // this gets the value for the "hours planned on working this week" field
+  let hoursThisWeek = parseInt(document.getElementById('hoursThisWeek').value);
 
   // current hours on friday morning
   let fridayMorning = parseInt(document.getElementById('fridayMorning').value);
 
-  //minutes in decimal form
+  // ramaining minutes in decimal form
   let remainingDecimals = (document.getElementById('remainingDecimals').value);
 
-  //convert decimal minutes into time format minutes
+  //convert decimal minutes into time format minutes rounded to the nearest whole number
   let roundedDecimal = Math.round(remainingDecimals * 60);
 
   //result for current hours worked
-  let currentWorked = fridayMorning + " hours and " + roundedDecimal + " minutes";
+  let currentWorked = fridayMorning + " hours " + roundedDecimal + " minutes";
 
-
-  //this is to display the current hours worked results in the correct field on page
-  document.getElementById('currentWorked').innerHTML = currentWorked;
-
-
-
-
-  let hoursThisWeek = parseInt(document.getElementById('hoursThisWeek').value);
+  // var min =
+  //   if (roundedDecimal === 1) {
+  //     "minute";
+  //   } else {
+  //     "minutes";
+  //   }
 
   let remainingHours = (hoursThisWeek - fridayMorning) - 1;
 
   let remainingMinutes = (60 - roundedDecimal);
 
-  let hoursLeftToWork = remainingHours + " hours and " + remainingMinutes + " minutes"
+  let hoursLeftToWork = remainingHours + " hours " + remainingMinutes + " minutes";
 
+  //this is to display the current hours worked results
+  document.getElementById('currentWorked').innerHTML = currentWorked;
+
+  //this is to display the remaining hours left results
   document.getElementById('hoursLeftToWork').innerHTML = hoursLeftToWork;
 
 }
