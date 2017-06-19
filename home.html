@@ -15,80 +15,84 @@
 
 <body>
 
-  <header>
-    <h3>Workweek Calculator</h3>
-  </header>
+    <header>
+      <h3>Workweek Calculator</h3>
+    </header>
 
-  <div class="wrapper">
-
-    <div>
-      <h4 class="sections totalHours">How many hours do you plan on working this week?</h4>
-      <input type="text" maxlength="2" class="userInput" id="hoursThisWeek" placeholder="ex: 40" />
-    </div>
-
-    <div>
-      <h4 class="sections fridayHours">On Friday morning, how many hours<br />(in whole numbers) do you currently have?</h4>
-      <input type="text" maxlength="2" class="userInput" id="fridayMorning" placeholder="ex:  33">
-    </div>
-
-    <div>
-      <h4 class="sections remDecimal">Enter remaining decimals:</h4>
-      <input type="text" maxlength="3" class="userInput" id="remainingDecimals" placeholder="ex:  .57" />
-    </div>
-
-
-    <div>
-      <h4 class="sections clockFriday">Enter time you clocked in on Friday:</h4>
-      <input type="text" maxlength="5" class="userInput" id="enterClockIn" placeholder="ex:  07:22" /><br />
-    </div>
-
-    <div class="buttons">
-      <button class="amButton">AM</button>
-      <button class="pmButton">PM</button>
-    </div>
-
-    <div>
-      <h4 class="sections lunch">Enter today's lunch break in minutes:</h4>
-      <input type="text" maxlength="3" class="userInput" id="enterLunch" placeholder="ex: 30"/>
-    </div>
-
-    <div class="sections calculate">
-      <button class="calcButton" onclick="calculateButton()">Calculate my hours</button>
-    </div>
-
-    <div class="resultsDiv">
-
-    <div>
-      <h4 class="sections currentHoursWorked results">Current hours worked:</h4>
-      <output type="text" class="defaultCalc resultsCalc" id="currentWorked">
-
-      </output>
-    </div>
-
-    <div>
-      <h4 class="sections remainHours results">Remaining hours to work:</h4>
-      <output type="text" class="defaultCalc resultsCalc" id="hoursLeftToWork">
-
-      </output>
-    </div>
-
-    <div>
+    <div class="wrapper">
 
       <div>
-        <h4 class="sections remainHours results">Time to clock out on Friday:</h4>
-        <output type="text" class="defaultCalc clockOutTime resultsCalc" id="currentWorked">
-
-        </output>
+        <h4 class="sections totalHours">How many hours do you plan on working this week?</h4>
+        <input type="text" maxlength="2" class="userInput" id="hoursThisWeek" placeholder="ex: 40" />
       </div>
 
-    <div class="lastButtons">
-      <div class="clockOutAMButton">AM</div>
-      <div class="clockOutPMButton">PM</div>
+      <div>
+        <h4 class="sections fridayHours">On Friday morning, how many hours<br />(in whole numbers) do you currently have?</h4>
+        <input type="text" maxlength="2" class="userInput" id="fridayMorning" placeholder="ex:  33">
+      </div>
+
+      <div>
+        <h4 class="sections remDecimal">Enter remaining decimals:</h4>
+        <input type="text" maxlength="3" class="userInput" id="remainingDecimals" placeholder="ex:  .57" />
+      </div>
+
+
+      <div>
+        <h4 class="sections clockFriday">Enter time you clocked in on Friday:</h4>
+        <input type="text" maxlength="8" class="userInput" id="enterClockIn" placeholder="ex:  07:22 AM" />
+      </div>
+
+      <div>
+        <h4 class="sections lunch">Enter today's lunch break in minutes:</h4>
+        <input type="text" maxlength="3" class="userInput" id="enterLunch" placeholder="ex: 30" />
+      </div>
+
+      <div class="sections calculate">
+        <button class="calcButton" onclick="calculateButton()">Calculate my hours</button>
+      </div>
+
+      <div class="resultsDiv">
+
+        <div>
+          <h4 class="sections currentHoursWorked results">Current hours worked:</h4>
+          <output type="text" class="defaultCalc resultsCalc" id="currentWorked">
+
+      </output>
+        </div>
+
+        <div>
+          <h4 class="sections remainHours results">Remaining hours to work:</h4>
+          <output type="text" class="defaultCalc resultsCalc" id="hoursLeftToWork">
+
+      </output>
+        </div>
+
+        <div>
+
+          <div>
+            <h4 class="sections remainHours results">Time to clock out on Friday:</h4>
+            <output type="text" class="defaultCalc clockOutTime resultsCalc" id="clockOutFri">
+
+        </output>
+          </div>
+
+        </div>
+      </div>
     </div>
 
-  </div>
+    <div class="push">
 
+    </div>
+
+  <footer class="footer">
+      <h4>Created by: Luis Rizo @lgrizo </h4>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/moment.js"></script>
+
 </body>
 
 </html>

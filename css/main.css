@@ -8,6 +8,7 @@ body {
   background: #edf0f1;
   font-family: 'Hind', sans-serif;
   text-align: center;
+  height: 100%;
 }
 
 header {
@@ -79,33 +80,6 @@ h4 {
   -webkit-appearance: none;
 }
 
-.sections {
-  margin: 30px 0;
-}
-
-
-/*Buttons*/
-
-.amButton, .pmButton {
-  border: 1px solid #C3C8CB;
-  width: 45px;
-  height: 29px;
-  background-color: #fff;
-  color: #95989A;
-  border-radius: 12px;
-  font-family: 'Hind', sans-serif;
-  line-height: 29px;
-  font-weight: 300;
-  padding-right: 5px;
-  box-sizing: border-box;
-}
-
-.buttons {
-  margin: 25px 0;
-  text-align: center;
-  box-sizing: border-box;
-}
-
 .calcButton {
   border: 1px;
   width: 250px;
@@ -118,23 +92,6 @@ h4 {
   text-align: center;
   font-family: 'Hind', sans-serif;
   line-height: 36px;
-}
-
-
-.clockOutAMButton, .clockOutPMButton {
-  border: 1px solid #C3C8CB;
-  width: 45px;
-  height: 29px;
-  background-color: #fff;
-  color: #95989A;
-  border-radius: 12px;
-  text-align: center;
-  display: inline-block;
-  line-height: 30px;
-  margin-top: 20px;
-  margin-bottom: 100px;
-  font-family: 'Hind', sans-serif;
-  font-weight: 300;
 }
 
 input:focus {
@@ -160,7 +117,8 @@ button:focus {
 }
 
 #currentWorked,
-#hoursLeftToWork {
+#hoursLeftToWork,
+#clockOutFri {
   width: 180px;
   height: 29px;
   text-align: center;
@@ -169,12 +127,39 @@ button:focus {
   color: #60B6FF;
 }
 
+footer {
+  width: 250px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+footer h4 {
+  color: #fff;
+  text-align: center;
+  vertical-align: bottom;
+  padding-top: 13px;
+  font-size: 14x;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -40px;
+}
+.footer,
+.push {
+  height: 40px;
+}
+
 
 @media (min-width: 768px) {
   header {
     margin: 0 auto;
     width: 80%;
   }
+
   .wrapper {
     margin: 0 auto;
     width: 575px;
@@ -222,10 +207,6 @@ button:focus {
     margin-top: 0px;
   }
 
-  .amButton, .pmButton {
-    text-align: center;
-  }
-
   .lunch {
     display: inline-block;
     padding-right: 75px;
@@ -233,14 +214,6 @@ button:focus {
     width: 300px;
   }
 
-  .lastButtons {
-    text-align: center;
-    padding-left: 380px;
-  }
-  .clockOutAMButton, .clockOutPMButton {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
   .sections, .clockOutTime, .defaultCalc {
     vertical-align: middle;
   }
