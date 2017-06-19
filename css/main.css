@@ -16,7 +16,7 @@ header {
   height: 70px;
   border-bottom-left-radius: 46px;
   border-bottom-right-radius: 46px;
-  background-image: linear-gradient(to right, #243949 0%, #517fa4 110%);
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 90%);
   box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
   color: #fff;
   text-align: center;
@@ -82,7 +82,7 @@ h4 {
   border: 1px;
   width: 250px;
   height: 36px;
-  background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+  background-color: #517fa4;
   color: #FFF;
   border-radius: 12px;
   font-weight: 100;
@@ -132,7 +132,7 @@ footer {
 }
 
 footer h4 {
-  color: #fff;
+  color: #000;
   text-align: center;
   vertical-align: bottom;
   padding-top: 9px;
