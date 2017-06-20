@@ -122,6 +122,10 @@ button:focus {
   color: #6099c2;
 }
 
+#clockOutFri {
+  margin-bottom: 25px;
+}
+
 /*sticky footer*/
 html, body {
   height: 100%;
