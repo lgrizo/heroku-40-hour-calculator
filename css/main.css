@@ -122,31 +122,31 @@ button:focus {
   color: #6099c2;
 }
 
-footer {
-  width: 250px;
-  background-color: #9cb6cb;
-  margin: 0 auto;
-  margin-top: 50px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+/*sticky footer*/
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
 }
 
-footer h4 {
-  color: #000;
+/*footer*/
+footer h4{
+  color: #FFF;
   text-align: center;
-  vertical-align: bottom;
-  padding-top: 18px;
   font-size: 15px;
+  background-color: #636060;
+  width: 200px;
+  margin: auto;
+  height: 25px;
+  line-height: 25px;
+
 }
 
-.wrapper {
-  min-height: 100%;
-  margin-bottom: -40px;
-}
-
-.footer, .push {
-  height: 50px;
-}
 
 @media (min-width: 768px) {
   header {
@@ -189,11 +189,6 @@ footer h4 {
     padding-right: 75px;
     text-align: right;
     width: 300px;
-  }
-  .buttons {
-    text-align: center;
-    padding-left: 380px;
-    margin-top: 0px;
   }
   .lunch {
     display: inline-block;
